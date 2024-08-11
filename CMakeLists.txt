@@ -793,11 +793,11 @@ if (UNIX OR APPLE)
           -DCPU_ONLY=${CAFFE_CPU_ONLY}
           -DCMAKE_BUILD_TYPE=Release
           -DBUILD_docs=OFF
-          -DBUILD_python=OFF
-          -DBUILD_python_layer=OFF
+          -DBUILD_python=ON
+          -DBUILD_python_layer=ON
           -DUSE_LEVELDB=OFF
           -DUSE_LMDB=OFF
-          -DUSE_OPENCV=OFF)
+          -DUSE_OPENCV=ON)
           # -DOpenCV_DIR=${OpenCV_DIR})
       else (USE_MKL)
         ExternalProject_Add(openpose_lib
@@ -812,11 +812,11 @@ if (UNIX OR APPLE)
           -DCPU_ONLY=${CAFFE_CPU_ONLY}
           -DCMAKE_BUILD_TYPE=Release
           -DBUILD_docs=OFF
-          -DBUILD_python=OFF
-          -DBUILD_python_layer=OFF
+          -DBUILD_python=ON
+          -DBUILD_python_layer=ON
           -DUSE_LEVELDB=OFF
           -DUSE_LMDB=OFF
-          -DUSE_OPENCV=OFF)
+          -DUSE_OPENCV=ON)
           # -DOpenCV_DIR=${OpenCV_DIR})
       endif (USE_MKL)
 
