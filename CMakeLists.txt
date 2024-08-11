@@ -301,11 +301,11 @@ set_property(CACHE WITH_EIGEN PROPERTY STRINGS NONE AUTOBUILD FIND)
 # endif (UNIX AND NOT APPLE)
 
 # Download the models
-option(DOWNLOAD_BODY_25_MODEL "Download body 25-keypoint (body COCO and 6-keypoint foot) model." ON)
+option(DOWNLOAD_BODY_25_MODEL "Download body 25-keypoint (body COCO and 6-keypoint foot) model." OFF)
 option(DOWNLOAD_BODY_COCO_MODEL "Download body 18-keypoint COCO model." OFF)
 option(DOWNLOAD_BODY_MPI_MODEL "Download body 15-keypoint MPI model." OFF)
-option(DOWNLOAD_FACE_MODEL "Download face model." ON)
-option(DOWNLOAD_HAND_MODEL "Download hand model." ON)
+option(DOWNLOAD_FACE_MODEL "Download face model." OFF)
+option(DOWNLOAD_HAND_MODEL "Download hand model." OFF)
 
 # Asio
 # option(USE_ASIO "Include Asio header-only library." OFF)
@@ -313,7 +313,7 @@ option(DOWNLOAD_HAND_MODEL "Download hand model." ON)
 # More options
 option(BUILD_EXAMPLES "Build OpenPose examples." ON)
 option(BUILD_DOCS "Build OpenPose documentation." OFF)
-option(BUILD_PYTHON "Build OpenPose python." OFF)
+option(BUILD_PYTHON "Build OpenPose python." ON)
 if (WIN32)
   option(BUILD_BIN_FOLDER "Copy all required 3rd-party DLL files into {build_directory}/bin. Disable to save some memory." ON)
 endif (WIN32)
@@ -325,7 +325,7 @@ option(BUILD_UNITY_SUPPORT "Build OpenPose as a Unity plugin." OFF)
 option(BUILD_SHARED_LIBS "Build as shared lib." ON)
 
 # Speed profiler
-option(PROFILER_ENABLED "If enabled, OpenPose will be able to print out speed information at runtime." OFF)
+option(PROFILER_ENABLED "If enabled, OpenPose will be able to print out speed information at runtime." ON)
 
 # Threads - Pthread
 if (${GPU_MODE} MATCHES "OPENCL" OR (UNIX OR APPLE))
