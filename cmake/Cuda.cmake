@@ -98,7 +98,7 @@ endfunction()
 function(op_select_nvcc_arch_flags out_variable)
   # List of arch names
   set(__archs_names "Kepler (CUDA >= 5)" "Maxwell (CUDA >= 6)" "Pascal (CUDA >= 8)" "Volta (CUDA >= 9)" "Turing (CUDA >= 10)" "ADA (CUDA > 11.7)" "All" "Manual")
-  # set(__archs_names "Fermi (3.2 <= CUDA <= 8)" "Kepler (CUDA >= 5)" "Maxwell (CUDA >= 6)" "Pascal (CUDA >= 8)" "Volta (CUDA >= 9)" "Turing (CUDA >= 10)" "ADA (CUDA > 11.7)" "All" "Manual")
+  # set(__archs_names "Fermi (3.2 <= CUDA <= 8)" "Kepler (CUDA >= 5)" "Maxwell (CUDA >= 6)" "Pascal (CUDA >= 8)" "Volta (CUDA >= 9)" "Turing (CUDA >= 10)" "ADA" "All" "Manual")
   set(__archs_name_default "All")
   if (NOT CMAKE_CROSSCOMPILING)
     list(APPEND __archs_names "Auto")
