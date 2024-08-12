@@ -31,11 +31,9 @@ set(ADA "89")
 # Hopper (CUDA >= 12)
 set(HOPPER "90 90a")
 if (UNIX AND NOT APPLE)
-  set(Caffe_known_gpu_archs "${VOLTA} ${TURING} ${AMPERE} ${ADA} ${HOPPER}")
-  # set(Caffe_known_gpu_archs "${VOLTA} ${TURING} ${AMPERE} ${ADA} ${HOPPER}")
-  # set(Caffe_known_gpu_archs "20 21(20) 30 35 50 52 60 61")
+  set(Caffe_known_gpu_archs "70 72 75 80 86 87 89 90 90a")
 elseif (WIN32)
-  set(Caffe_known_gpu_archs "${VOLTA} ${TURING} ${AMPERE} ${ADA} ${HOPPER}")
+  set(Caffe_known_gpu_archs "70 72 75 80 86 87 89 90 90a")
 endif ()
 
 
