@@ -92,7 +92,7 @@ endfunction()
 function(op_select_nvcc_arch_flags out_variable)
   # List of arch names
   set(__archs_names "Volta" "Turing" "Ampere" "Ada" "Hopper" "All" "Manual")
-  # set(__archs_names "Volta" "Turing" "Ampere" "Ada" "Hopper" "All" "Manual")
+  # set(__archs_names "Volta" "Turing" "Ampere" "Ada" "Hopper" "All" "Manual"vim)
   set(__archs_name_default "All")
   if (NOT CMAKE_CROSSCOMPILING)
     list(APPEND __archs_names "Auto")
