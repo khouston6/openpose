@@ -20,14 +20,6 @@ macro(op_list_unique)
 endmacro()
 
 # This list will be used for CUDA_ARCH = All option
-## Fermi (3.2 <= CUDA <= 8)
-## set(FERMI "20 21(20)")
-## Kepler (CUDA >= 5)
-##set(KEPLER "35 37") # set(KEPLER "30 35 37") # This crashes with CUDA 10
-## Maxwell (CUDA >= 6)
-##set(MAXWELL "50 52 53")
-## Pascal (CUDA >= 8)
-##set(PASCAL "60 61 62")
 # Volta (CUDA >= 9)
 set(VOLTA "70 72") # set(VOLTA "70 71 72") # This crashes with CUDA 10
 # Turing (CUDA >= 10)
